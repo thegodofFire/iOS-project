@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *LabelTest;
+
 @end
 
 @implementation ViewController
@@ -22,6 +24,18 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)StartListManager:(id)sender {
+    self.LabelTest.text = @"List Manager";
+}
+
+- (IBAction)StartOCManager:(id)sender {
+    self.LabelTest.text = @"OC Manager";
+}
+
+- (IBAction)clearList:(id)sender {
+    self.LabelTest.text = @" ";
 }
 
 @end

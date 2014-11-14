@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		486984C51A158BF6008A5745 /* LLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 486984C41A158BF6008A5745 /* LLNode.m */; };
+		486984C71A158C2E008A5745 /* LList.m in Sources */ = {isa = PBXBuildFile; fileRef = 486984C61A158C2E008A5745 /* LList.m */; };
 		48E0CEA11A157D6800F13F0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E0CEA01A157D6800F13F0B /* main.m */; };
 		48E0CEA41A157D6800F13F0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E0CEA31A157D6800F13F0B /* AppDelegate.m */; };
 		48E0CEA71A157D6800F13F0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E0CEA61A157D6800F13F0B /* ViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		486984C21A158B8C008A5745 /* LLNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLNode.h; sourceTree = "<group>"; };
+		486984C31A158BCC008A5745 /* LList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LList.h; sourceTree = "<group>"; };
+		486984C41A158BF6008A5745 /* LLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNode.m; sourceTree = "<group>"; };
+		486984C61A158C2E008A5745 /* LList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LList.m; sourceTree = "<group>"; };
 		48E0CE9B1A157D6800F13F0B /* iOS app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E0CE9F1A157D6800F13F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48E0CEA01A157D6800F13F0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +95,10 @@
 				48E0CEAB1A157D6800F13F0B /* Images.xcassets */,
 				48E0CEAD1A157D6800F13F0B /* LaunchScreen.xib */,
 				48E0CE9E1A157D6800F13F0B /* Supporting Files */,
+				486984C21A158B8C008A5745 /* LLNode.h */,
+				486984C31A158BCC008A5745 /* LList.h */,
+				486984C41A158BF6008A5745 /* LLNode.m */,
+				486984C61A158C2E008A5745 /* LList.m */,
 			);
 			path = "iOS app";
 			sourceTree = "<group>";
@@ -220,8 +230,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				48E0CEA71A157D6800F13F0B /* ViewController.m in Sources */,
+				486984C51A158BF6008A5745 /* LLNode.m in Sources */,
 				48E0CEA41A157D6800F13F0B /* AppDelegate.m in Sources */,
 				48E0CEA11A157D6800F13F0B /* main.m in Sources */,
+				486984C71A158C2E008A5745 /* LList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +426,7 @@
 				48E0CEC01A157D6900F13F0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48E0CEC11A157D6900F13F0B /* Build configuration list for PBXNativeTarget "iOS appTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +435,7 @@
 				48E0CEC31A157D6900F13F0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
