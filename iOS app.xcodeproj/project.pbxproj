@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		486984C51A158BF6008A5745 /* LLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 486984C41A158BF6008A5745 /* LLNode.m */; };
-		486984C71A158C2E008A5745 /* LList.m in Sources */ = {isa = PBXBuildFile; fileRef = 486984C61A158C2E008A5745 /* LList.m */; };
+		48B15B621A16A9C5006CAE4D /* LList.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B15B611A16A9C5006CAE4D /* LList.m */; };
+		48B15B631A16BB3D006CAE4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E0CEA61A157D6800F13F0B /* ViewController.m */; };
+		48B15B651A16BDBB006CAE4D /* LLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B15B641A16BDBB006CAE4D /* LLNode.m */; };
+		48B15B681A16DC11006CAE4D /* SetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B15B671A16DC11006CAE4D /* SetManager.m */; };
 		48E0CEA11A157D6800F13F0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E0CEA01A157D6800F13F0B /* main.m */; };
 		48E0CEA41A157D6800F13F0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E0CEA31A157D6800F13F0B /* AppDelegate.m */; };
 		48E0CEA71A157D6800F13F0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E0CEA61A157D6800F13F0B /* ViewController.m */; };
@@ -31,8 +33,10 @@
 /* Begin PBXFileReference section */
 		486984C21A158B8C008A5745 /* LLNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLNode.h; sourceTree = "<group>"; };
 		486984C31A158BCC008A5745 /* LList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LList.h; sourceTree = "<group>"; };
-		486984C41A158BF6008A5745 /* LLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNode.m; sourceTree = "<group>"; };
-		486984C61A158C2E008A5745 /* LList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LList.m; sourceTree = "<group>"; };
+		48B15B611A16A9C5006CAE4D /* LList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LList.m; sourceTree = "<group>"; };
+		48B15B641A16BDBB006CAE4D /* LLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNode.m; sourceTree = "<group>"; };
+		48B15B661A16D171006CAE4D /* SetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetManager.h; sourceTree = "<group>"; };
+		48B15B671A16DC11006CAE4D /* SetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetManager.m; sourceTree = "<group>"; };
 		48E0CE9B1A157D6800F13F0B /* iOS app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E0CE9F1A157D6800F13F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48E0CEA01A157D6800F13F0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,8 +101,10 @@
 				48E0CE9E1A157D6800F13F0B /* Supporting Files */,
 				486984C21A158B8C008A5745 /* LLNode.h */,
 				486984C31A158BCC008A5745 /* LList.h */,
-				486984C41A158BF6008A5745 /* LLNode.m */,
-				486984C61A158C2E008A5745 /* LList.m */,
+				48B15B611A16A9C5006CAE4D /* LList.m */,
+				48B15B641A16BDBB006CAE4D /* LLNode.m */,
+				48B15B661A16D171006CAE4D /* SetManager.h */,
+				48B15B671A16DC11006CAE4D /* SetManager.m */,
 			);
 			path = "iOS app";
 			sourceTree = "<group>";
@@ -229,11 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B15B681A16DC11006CAE4D /* SetManager.m in Sources */,
 				48E0CEA71A157D6800F13F0B /* ViewController.m in Sources */,
-				486984C51A158BF6008A5745 /* LLNode.m in Sources */,
 				48E0CEA41A157D6800F13F0B /* AppDelegate.m in Sources */,
+				48B15B621A16A9C5006CAE4D /* LList.m in Sources */,
 				48E0CEA11A157D6800F13F0B /* main.m in Sources */,
-				486984C71A158C2E008A5745 /* LList.m in Sources */,
+				48B15B651A16BDBB006CAE4D /* LLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B15B631A16BB3D006CAE4D /* ViewController.m in Sources */,
 				48E0CEBB1A157D6900F13F0B /* iOS_appTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

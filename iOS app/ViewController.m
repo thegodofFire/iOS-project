@@ -34,8 +34,32 @@
     self.LabelTest.text = @"OC Manager";
 }
 
-- (IBAction)clearList:(id)sender {
+- (IBAction)clear:(id)sender {
     self.LabelTest.text = @" ";
+}
+
+- (IBAction)switchVals:(id)sender {
+}
+
+- (IBAction)save:(id)sender {
+}
+
+- (IBAction)addElem:(id)sender {
+}
+
+- (IBAction)removeElem:(id)sender {
+}
+
+- (IBAction)size:(id)sender {
+}
+
+- (IBAction)access:(id)sender {
+}
+
+- (IBAction)member:(id)sender {
+}
+
+- (IBAction)unionSets:(id)sender {
 }
 
 @end

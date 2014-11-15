@@ -9,5 +9,13 @@
 #ifndef iOS_app_LLNode_h
 #define iOS_app_LLNode_h
 
+@interface NODE : NSObject
+
+@property int val;
+@property NODE* next;
+
+-(id)init;
+
+@end
 
 #endif
