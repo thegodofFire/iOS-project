@@ -18,15 +18,14 @@
     SetB = temp;
 }
 
-
--(bool)member:(id)SetA arg:(int)val {
-    if([self access:SetA index:val] == val)
+-(bool)memTest:(id)SetA val:(int)i {
+    if([self accessMem:SetA index:i] == i)
         return true;
     return false;
 }
 
 -(void)unionSets:(id)SetA sb:(id)SetB {
-    while(
+    // todo
 }
 
 @end

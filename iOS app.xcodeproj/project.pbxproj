@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4870E7491A1C00AA00034F39 /* ListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870E7481A1C00AA00034F39 /* ListManager.m */; };
+		4870E74C1A1C299500034F39 /* OCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870E74B1A1C299500034F39 /* OCManager.m */; };
 		48B15B621A16A9C5006CAE4D /* LList.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B15B611A16A9C5006CAE4D /* LList.m */; };
 		48B15B631A16BB3D006CAE4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E0CEA61A157D6800F13F0B /* ViewController.m */; };
 		48B15B651A16BDBB006CAE4D /* LLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B15B641A16BDBB006CAE4D /* LLNode.m */; };
@@ -33,6 +35,10 @@
 /* Begin PBXFileReference section */
 		486984C21A158B8C008A5745 /* LLNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLNode.h; sourceTree = "<group>"; };
 		486984C31A158BCC008A5745 /* LList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LList.h; sourceTree = "<group>"; };
+		4870E7471A1BFF6700034F39 /* ListManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListManager.h; sourceTree = "<group>"; };
+		4870E7481A1C00AA00034F39 /* ListManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListManager.m; sourceTree = "<group>"; };
+		4870E74A1A1C285F00034F39 /* OCManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCManager.h; sourceTree = "<group>"; };
+		4870E74B1A1C299500034F39 /* OCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCManager.m; sourceTree = "<group>"; };
 		48B15B611A16A9C5006CAE4D /* LList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LList.m; sourceTree = "<group>"; };
 		48B15B641A16BDBB006CAE4D /* LLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNode.m; sourceTree = "<group>"; };
 		48B15B661A16D171006CAE4D /* SetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetManager.h; sourceTree = "<group>"; };
@@ -105,6 +111,10 @@
 				48B15B641A16BDBB006CAE4D /* LLNode.m */,
 				48B15B661A16D171006CAE4D /* SetManager.h */,
 				48B15B671A16DC11006CAE4D /* SetManager.m */,
+				4870E7471A1BFF6700034F39 /* ListManager.h */,
+				4870E7481A1C00AA00034F39 /* ListManager.m */,
+				4870E74A1A1C285F00034F39 /* OCManager.h */,
+				4870E74B1A1C299500034F39 /* OCManager.m */,
 			);
 			path = "iOS app";
 			sourceTree = "<group>";
@@ -237,6 +247,8 @@
 			files = (
 				48B15B681A16DC11006CAE4D /* SetManager.m in Sources */,
 				48E0CEA71A157D6800F13F0B /* ViewController.m in Sources */,
+				4870E7491A1C00AA00034F39 /* ListManager.m in Sources */,
+				4870E74C1A1C299500034F39 /* OCManager.m in Sources */,
 				48E0CEA41A157D6800F13F0B /* AppDelegate.m in Sources */,
 				48B15B621A16A9C5006CAE4D /* LList.m in Sources */,
 				48E0CEA11A157D6800F13F0B /* main.m in Sources */,

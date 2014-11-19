@@ -11,7 +11,15 @@
 
 @implementation LIST
 
-int length(NODE* head) {
+-(id)init {
+    self = [super init];
+    if (self) {
+        NODE* head = nil;
+    }
+    return self;
+}
+
+-(int)length:(NODE*)head {
     int i = 0;
     NODE* curr;
     
@@ -24,7 +32,21 @@ int length(NODE* head) {
     return i;
 }
 
--(void) addFront: (NODE*)head val:(int)val {
+-(int)itemAccess:(NODE*)head item:(int)val {
+    int i = 0;
+    NODE* curr;
+    
+    curr = head;
+    while(curr != nil) {
+        if(i == val)
+            return true;
+        i++;
+        curr = curr.next;
+    }
+    return false;
+}
+
+-(void)addFront:(NODE*)head val:(int)val {
     NODE* newNode = [[NODE alloc] init];
     newNode.val = val;
     newNode.next = nil;
@@ -39,7 +61,7 @@ int length(NODE* head) {
     
 }
 
--(void) addMid:(NODE*)head val:(int)val pos:(int)pos {
+-(void)addMid:(NODE*)head val:(int)val pos:(int)pos {
     NODE* curr;
     
     int i = 0;
@@ -47,8 +69,7 @@ int length(NODE* head) {
     NODE* newNode = [[NODE alloc] init];
     newNode.val = val;
     newNode.next = nil;
-    
-    if (pos >= (length(head) + 1))
+    if (pos >= ( [self length:head] + 1) )
         exit(-1);
 
     if (head.next == nil) {
@@ -67,7 +88,7 @@ int length(NODE* head) {
 }
 
 
--(void) addEnd:(NODE*)head val:(int)val {
+-(void)addEnd:(NODE*)head val:(int)val {
     NODE* newNode = [[NODE alloc] init];
     
     newNode.val = val;
@@ -75,7 +96,7 @@ int length(NODE* head) {
     
     NODE* curr;
     
-    if(head.next == nil) {
+    if(head.next== nil) {
         head.next = newNode;
     }
     else {
@@ -93,7 +114,7 @@ int length(NODE* head) {
     NODE* temp;
     int i = 0;
     
-    if(pos > length(head))
+    if(pos > [self length:head])
         exit(-1);
     
     if (pos == 0) {
@@ -114,6 +135,27 @@ int length(NODE* head) {
     
     temp = curr.next;
     curr = curr.next.next;
+}
+
+-(void)clearLIST:(NODE*)head {
+    head = nil;
+}
+
+-(void)saveLIST:(NODE*)head oldHead:(NODE*)head2 {
+    NODE* curr = head;
+    head2 = nil;
+    while(curr.next != nil)
+        [self addFront:head2 val: curr.val];
+}
+
+-(bool)memOfLIST:(NODE*)head val:(int)val {
+    NODE* curr = head;
+    while(curr.next != nil) {
+        if(curr.val == val)
+            return true;
+        curr = curr.next;
+    }
+    return false;
 }
 
 @end

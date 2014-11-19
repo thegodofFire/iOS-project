@@ -18,10 +18,10 @@
 -(void)switchVals:(id)SetA sb:(id)SetB; // implement in SManager
 -(void)save:(id)SetA sb:(id)SetB;
 -(void)addElem:(id)SetA index:(int)i;
--(void)removeElem:(id)SetA;
--(void)size:(id)SetA;
--(int)access:(id)SetA index:(int)i;
--(BOOL)member:(id)SetA; // implement in SManager
+-(void)removeElem:(id)SetA index:(int)i;
+-(int)size:(id)SetA;
+-(int)accessMem:(id)SetA index:(int)i;
+-(bool)memTest:(id)SetA val:(int)i; // implement in SManager
 -(void)unionSets:(id)SetA sb:(id)SetB;  // implement in SManager
 
 @end
